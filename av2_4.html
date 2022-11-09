@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>NOTAS MEDIA</title>
+<--- Leia o nome e as tres notas do aluno --->
+
+   Primeira nota <input id="nota1" type="number"> <br />
+   Segunda  nota <input id="nota2" type="number"> <br />
+   Terceira nota <input id="nota2" type="number"> <br />
+   <button onclick="media()">Calcular Media</button>
+
+   <script type="text/javascript">
+
+    function media(){
+     var nota1 = parseFloat(document.getElementById("nota1").value);
+     var nota2 = parseFloat(document.getElementById("nota2").value);
+     var nota3 = parseFloat(document.getElementById("nota2").value);
+
+     var media = (nota1 + nota2 + nota3) /3;
+
+     if(media >= 7)
+      if(media==10)
+       alert('Aprovado');
+      else
+       alert("Aprovado"+media);
+     else
+      alert("Reprovado!")
+
+    }
+ </script>
+
+ </head>
+</html>
+
+
+2 - function segundosParaHora(seg) {
+        var horas = Math.floor(seg/(60*60));
+
+        var resto = seg % (60*60);
+        var minutos = Math.floor(seg/60);
+
+        resto %= 60;
+        segundos = Math.ceil(resto);
+
+        var hora = {
+            "H": horas,
+            "i": minutos,
+            "s": segundos
+        };
+        return hora;
+}
+
+</html>
+
